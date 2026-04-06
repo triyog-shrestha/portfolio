@@ -40,12 +40,12 @@ export function Projects() {
 
           <div className="mt-8 flex flex-wrap gap-6 text-sm">
             <a
-              href="https://github.com/your-username/your-music-analyser-project"
+              href="https://github.com/triyog-shrestha/musify"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-zinc-300 transition hover:text-cyan-200"
             >
-              <FolderGit2 size={16} /> GitHub (placeholder)
+              <FolderGit2 size={16} /> GitHub
             </a>
             <a
               href="#"
