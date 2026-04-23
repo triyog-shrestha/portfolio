@@ -16,6 +16,14 @@ export interface ContactItem {
   href: string;
 }
 
+export interface ProjectItem {
+  title: string;
+  description: string;
+  technologies: string[];
+  link?: string;
+  github?: string;
+}
+
 export const profile = {
   name: 'Triyog Shrestha',
   title: 'Software Engineering Student & Developer',
@@ -56,6 +64,28 @@ export const interests: string[] = [
   'Music is a core part of my identity and creative energy.',
   'Basketball keeps me sharp; I follow the NBA closely.',
   'NFL game days are part of my weekend rhythm.',
+];
+
+export const projects: ProjectItem[] = [
+  {
+    title: 'Portfolio Website',
+    description: 'A modern, responsive portfolio built with React and TypeScript. Features smooth animations, dark theme design, and optimized performance.',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    github: 'https://github.com/your-username/portfolio',
+  },
+  {
+    title: 'Project Name',
+    description: 'Brief description of your project and what problem it solves.',
+    technologies: ['Technology 1', 'Technology 2', 'Technology 3'],
+    github: 'https://github.com/your-username/project-name',
+  },
+  {
+    title: 'Another Project',
+    description: 'Description of another project you\'ve built or contributed to.',
+    technologies: ['Technology 1', 'Technology 2'],
+    link: 'https://example.com',
+    github: 'https://github.com/your-username/another-project',
+  },
 ];
 
 export const contactLinks: ContactItem[] = [
