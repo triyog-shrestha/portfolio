@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for high-end minimalist feel */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+
+body {
+  background-color: #131313;
+  color: #e5e2e1;
+  cursor: crosshair;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  font-family: inherit;
+}
+
+/* Scroll reveal animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+.mix-difference {
+  mix-blend-mode: difference;
+}
+
+/* Input focus styles */
+.form-input-focus:focus {
+  outline: none;
+  border-color: #ffffff;
+  transition: border-color 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
