@@ -1,5 +1,6 @@
 import React from "react";
 import { GraduationCap, Landmark, Award } from "lucide-react";
+import eduImage from "../assets/edu.png";
 
 export default function Education() {
   const educationData = [
@@ -30,7 +31,15 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-stack-xl bg-surface-container-low scroll-mt-20 reveal-on-scroll">
+    <section
+      id="education"
+      className="relative overflow-hidden py-stack-xl scroll-mt-20 reveal-on-scroll"
+      style={{
+        backgroundImage: `linear-gradient(rgba(19, 19, 19, 0.78), rgba(19, 19, 19, 0.78)), url(${eduImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+    >
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
         <div className="border-t border-surface-container-highest pt-stack-md flex flex-col md:flex-row gap-stack-xl">
           
@@ -43,7 +52,7 @@ export default function Education() {
               Education
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mt-6 max-w-xs leading-relaxed">
-              A timeline of formal education and foundational learnings that shape my approach to engineering and software design.
+              A timeline of formal education and foundational learnings that shaped my approach to engineering and software design.
             </p>
           </div>
 

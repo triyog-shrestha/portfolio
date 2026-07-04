@@ -72,14 +72,14 @@ export default {
         "stack-xl": "80px"
       },
       fontFamily: {
-        "label-md": ["Geist", "sans-serif"],
-        "label-sm": ["Geist", "sans-serif"],
-        "body-lg": ["Geist", "sans-serif"],
+        "label-md": ["General Sans", "Inter Tight", "sans-serif"],
+        "label-sm": ["General Sans", "Inter Tight", "sans-serif"],
+        "body-lg": ["General Sans", "Inter Tight", "sans-serif"],
         "headline-xl-mobile": ["Libre Caslon Text", "serif"],
         "headline-md": ["Libre Caslon Text", "serif"],
         "headline-lg": ["Libre Caslon Text", "serif"],
         "headline-xl": ["Libre Caslon Text", "serif"],
-        "body-md": ["Geist", "sans-serif"]
+        "body-md": ["General Sans", "Inter Tight", "sans-serif"]
       },
       fontSize: {
         "label-md": ["14px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "500" }],

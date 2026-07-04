@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="mt-stack-md flex items-center gap-4 reveal-on-scroll">
             <span className="h-[1px] w-12 bg-primary"></span>
             <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-on-surface-variant">
-              1st Year SE — PCPS College — Kathmandu
+              Lubhu - Lalitpur
             </p>
           </div>
         </div>

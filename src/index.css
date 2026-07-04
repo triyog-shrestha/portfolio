@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@ body {
   background-color: #131313;
   color: #e5e2e1;
   cursor: crosshair;
-  font-family: 'Inter', sans-serif;
+  font-family: 'General Sans', 'Inter Tight', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

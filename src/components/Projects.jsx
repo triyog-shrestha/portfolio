@@ -1,5 +1,7 @@
 import React from "react";
 import { GithubIcon } from "./CustomIcons";
+import projectImage from "../assets/projects.png";
+
 
 export default function Projects() {
 
@@ -47,7 +49,15 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-stack-xl bg-surface-container-low scroll-mt-20 border-t border-surface-container-highest reveal-on-scroll">
+  <section
+        id="projects"
+        className="relative overflow-hidden py-stack-xl scroll-mt-20 reveal-on-scroll"
+        style={{
+          backgroundImage: `linear-gradient(rgba(19, 19, 19, 0.78), rgba(19, 19, 19, 0.78)), url(${projectImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >      
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6 reveal-on-scroll">
           <div>
@@ -58,9 +68,7 @@ export default function Projects() {
               Selected Projects
             </h2>
           </div>
-          <p className="font-body-md text-body-md text-on-surface-variant opacity-70 max-w-xs md:text-right leading-relaxed">
-            Applying academic knowledge to tangible software solutions and interactive builds.
-          </p>
+      
         </div>
 
         {/* Bento-style Projects Grid */}
